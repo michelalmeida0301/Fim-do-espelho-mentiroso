@@ -39,7 +39,6 @@ const SugarCubeIcon: React.FC<{className?: string}> = ({ className }) => (
   </svg>
 );
 
-const PageTitle: React.FC<{ title: string; subtitle?: string; className?: string }> = ({ title, subtitle, className }) => (
   <header className={`text-center py-12 md:py-16 ${className}`}>
     <h1 className="text-5xl md:text-7xl font-bold text-ebook-highlight mb-4">{title}</h1>
     {subtitle && <p className="text-xl md:text-2xl text-ebook-text font-sans max-w-3xl mx-auto">{subtitle}</p>}
