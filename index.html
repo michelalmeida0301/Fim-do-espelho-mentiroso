@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Fim do Espelho Mentiroso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            'ebook-bg': '#F5F5DC', // Off-white
+            'ebook-text': '#333333', // Soft black
+            'ebook-highlight': '#005B41', // Emerald green
+            'ebook-highlight-soft': 'rgba(0, 91, 65, 0.08)', // Lighter emerald for backgrounds
+            'ebook-gold': '#B8860B', // Burnt gold (alternative, not used as primary)
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Ensure custom fonts are applied correctly */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Custom scrollbar for a more premium feel, optional */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F5F5DC; /* ebook-bg */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #005B41; /* ebook-highlight */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #004430; /* Darker highlight */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-ebook-bg text-ebook-text">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
